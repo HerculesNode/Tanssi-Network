@@ -1,4 +1,4 @@
-# Tanssi Network Kurulum.
+# Tanssi Network Kurulum. v0.6.1
 
 ## Linkler
  * [Hercules Telegram](https://t.me/HerculesNode)
