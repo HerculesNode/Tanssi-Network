@@ -127,6 +127,8 @@ journalctl -u tanssid -fo cat
 
 ## Polkadot cüzdanı injected etme
 
+- bu adrese gidin : https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
+
 - Cüzdanınızı seçin ( daha önce kelimeleri vermişti onu aktarın polkadot cüzdana
 - Session seçin
 - setKeys (keys, Prof ) seçin
