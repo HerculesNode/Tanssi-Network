@@ -5,7 +5,8 @@
  * [Hercules Twitter](https://twitter.com/Herculesnode)
 
 ## Form
- * [Form](www.tanssi.network/block-producer-form)
+ * [Form](https://www.tanssi.network/block-producer-form)
+ * [Explorer](https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/accounts)
 
 ## Sistem özellikleri
 
