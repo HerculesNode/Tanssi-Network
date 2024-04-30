@@ -9,7 +9,7 @@
 
 ## Sistem özellikleri
 
-| 2-4 Gb Ram  | Ubuntu 22.04 |  2000 Gb SSD | 
+| 2-4 Gb Ram  | Ubuntu 22.04 |  200+ Gb SSD | 
 | ----------------- | ----------------- | ----------------- |
 
 
