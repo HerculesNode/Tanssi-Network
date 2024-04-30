@@ -4,6 +4,9 @@
  * [Hercules Telegram](https://t.me/HerculesNode)
  * [Hercules Twitter](https://twitter.com/Herculesnode)
 
+## Form
+ * [Form](www.tanssi.network/block-producer-form)
+
 ## Sistem özellikleri
 
 | 2-4 Gb Ram  | Ubuntu 22.04 |  2000 Gb SSD | 
