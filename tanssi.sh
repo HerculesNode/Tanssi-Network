@@ -22,22 +22,22 @@ if systemctl is-active --quiet "$service_name.service" ; then
 fi
 
 # set variables
-if [ ! $MONIKER ]; then
-	read -p "Enter node name: " MONIKER
-	echo 'export MONIKER='$MONIKER >> $HOME/.bash_profile
+if [ ! $Node_name ]; then
+	read -p "Enter node name: " Node_name
+	echo 'export Node_name='$Node_name >> $HOME/.bash_profile
 else
-    echo "Node name is already defined: ${MONIKER}"
+    echo "Node name is already defined: ${Node_name}"
 fi
 
-echo 'export WALLET_NAME="Producer"' >> ~/.bash_profile
-echo 'export CHAIN_ID="RelayName"' >> ~/.bash_profile
+echo 'export Producer_name="Producer"' >> ~/.bash_profile
+echo 'export relayer_name="RelayName"' >> ~/.bash_profile
 
 source $HOME/.bash_profile
 
 echo '================================================='
-echo "node name: $MONIKER"
-echo "BLOCK Producer Name: $WALLET_NAME"
-echo "RELAY name: $CHAIN_ID"
+echo "node name: $Node_name"
+echo "BLOCK Producer Name: $Producer_name"
+echo "RELAY name: $relayer_name"
 echo '================================================='
 sleep 2
 
@@ -66,7 +66,7 @@ SyslogFacility=local7
 KillSignal=SIGHUP
 ExecStart=/root/tanssi-data/tanssi-node \
 --chain=dancebox \
---name=/$MONIKER \
+--name=$Node_name \
 --sync=warp \
 --base-path=/root/tanssi-data/para \
 --state-pruning=2000 \
@@ -75,12 +75,12 @@ ExecStart=/root/tanssi-data/tanssi-node \
 --database paritydb \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 -- \
---name=/$WALLET_NAME \
+--name=$Producer_name \
 --base-path=/root/tanssi-data/container \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 -- \
 --chain=westend_moonbase_relay_testnet \
---name=/$CHAIN_ID \
+--name=/$relayer_name \
 --sync=fast \
 --base-path=/root/tanssi-data/relay \
 --state-pruning=2000 \
