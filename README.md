@@ -119,8 +119,4 @@ journalctl -u tanssid -fo cat
 
 
 
-## Node key alalım ( burada bulunan SS58 ADRES ÇIKTISINI FORMA YAZACAĞIZ )
 
-```shell
-./tanssi-node key generate -w 24
-```
