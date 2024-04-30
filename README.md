@@ -26,6 +26,9 @@ sudo apt update && sudo apt upgrade -y
 wget https://github.com/moondance-labs/tanssi/releases/download/v0.6.1/tanssi-node 
 ```
 ```shell
+sudo mkdir /root/tanssi-data/
+```
+```shell
 chmod +x ./tanssi-node
 ```
 ```shell
