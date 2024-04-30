@@ -8,6 +8,7 @@
  * [Form](https://www.tanssi.network/block-producer-form)
  * [Explorer](https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/accounts)
  * [DanceBox Telemetry](https://telemetry.polkadot.io/#stats/0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea)
+ - Telemetry üzerinde node isminizi görmeniz lazım kurulum sonrası
 
 ## Sistem özellikleri
 
