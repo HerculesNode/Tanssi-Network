@@ -1,5 +1,7 @@
 # Tanssi Network Kurulum. v0.6.1  - Ubuntu 22.04 olması gerekiyor aksi taktirde çalışmaz !
 
+- Node kurduktan sonra Form doldurun ve Discord rolü alın.
+
 ## Linkler
  * [Hercules Telegram](https://t.me/HerculesNode)
  * [Hercules Twitter](https://twitter.com/Herculesnode)
