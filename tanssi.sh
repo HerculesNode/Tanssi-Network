@@ -22,22 +22,17 @@ if systemctl is-active --quiet "$service_name.service" ; then
 fi
 
 # set variables
-if [ ! $Node_name ]; then
-	read -p "Enter node name: " Node_name
-	echo 'export Node_name='$Node_name >> $HOME/.bash_profile
+if [ ! $Node_names ]; then
+	read -p "Enter Name: " Node_names
+	echo 'export Node_names='$Node_names >> $HOME/.bash_profile
 else
-    echo "Node name is already defined: ${Node_name}"
+    echo "Node name is already defined: ${Node_names}"
 fi
-
-echo 'export Producer_name="Producer"' >> ~/.bash_profile
-echo 'export relayer_name="RelayName"' >> ~/.bash_profile
 
 source $HOME/.bash_profile
 
 echo '================================================='
-echo "node name: $Node_name"
-echo "BLOCK Producer Name: $Producer_name"
-echo "RELAY name: $relayer_name"
+echo "node name: $Node_names"
 echo '================================================='
 sleep 2
 
@@ -73,14 +68,12 @@ ExecStart=/root/tanssi-data/tanssi-node \
 --blocks-pruning=2000 \
 --collator \
 --database paritydb \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
--- \
---name=$Producer_name \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
+--name=$Node_name \
 --base-path=/root/tanssi-data/container \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
--- \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --chain=westend_moonbase_relay_testnet \
---name=/$relayer_name \
+--name=$Node_name \
 --sync=fast \
 --base-path=/root/tanssi-data/relay \
 --state-pruning=2000 \
