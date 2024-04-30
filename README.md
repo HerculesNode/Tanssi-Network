@@ -41,7 +41,7 @@ mv /root/tanssi-node /root/tanssi-data
 
 ## Servis oluşturalım
 
-- 3 YERİ DEĞİŞTİRECEKSİNİZ.
+- 3 YERİ DEĞİŞTİRECEKSİNİZ. HEPSİNE AYNI İSMİ YAZIN BEN HERCULESNODE YAZDIM.
 
 1 - NODE-İSMİNİZİ-YAZIN
 2 - BLOCK-PRODUCER-İSMİNİZİ-YAZIN
