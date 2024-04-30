@@ -121,4 +121,7 @@ journalctl -u tanssid -fo cat
 
 
 
+## Form Sonrası Discord üzerinde bu rolü almanız lazım ( BLOCK-PRODUCER )
+
+![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/edc61a72-b88b-449a-8eaf-4e956ff92fe3)
 
