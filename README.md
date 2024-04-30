@@ -110,7 +110,7 @@ journalctl -u tanssid -fo cat
 ```
 
 
-## Node key alalım ( burada bulunan SS58 ADRES ÇIKTISINI FORMA YAZACAĞIZ )
+## Node key alalım ( burada bulunan SS58 ADRES ÇIKTISINI FORMA YAZACAĞIZ )  Bu çıktıları kaydedin !
 
 ```shell
 ./tanssi-node key generate -w 24
@@ -125,7 +125,20 @@ journalctl -u tanssid -fo cat
 
 
 
-## Form Sonrası Discord üzerinde bu rolü almanız lazım ( BLOCK-PRODUCER )
+## Polkadot cüzdanı injected etme
 
-![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/edc61a72-b88b-449a-8eaf-4e956ff92fe3)
+- Cüzdanınızı seçin ( daha önce kelimeleri vermişti onu aktarın polkadot cüzdana
+- Session seçin
+- setKeys (keys, Prof ) seçin
+- Public key yazın ( daha önce Node key alalım ./tanssi-node key generate -w 24 bu kodla almıştık orada yazan public key   ) 
+- proof: Bytes : 0x yazın
+- Altta sağda Submit Transaction basın
+
+![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/595f6510-1e33-423c-9d74-3b5135b56e08)
+
+- işlem sonrası cüzdanınız böyle görünecek.
+
+![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/825cb7a3-59cb-4a0b-91d4-ebfbfaca67bd)
+
+
 
