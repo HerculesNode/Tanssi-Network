@@ -201,10 +201,24 @@ moondancelabs/tanssi \
 --database paritydb
 ```
 
-- Log için
+## log için
 
 ```shell
 docker logs -f funny_bhabha
 ```
 
+## Key için 
+
+```shell
+curl http://127.0.0.1:9944 -H \
+"Content-Type:application/json;charset=utf-8" -d \
+  '{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_rotateKeys",
+    "params": []
+  }'
+```
+
+![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/d72d84e4-0ea2-454d-afc3-21d3a25f4bd1)
 
