@@ -1,4 +1,4 @@
-# Tanssi Network Kurulum. v0.6.1  - 
+# Tanssi Network Kurulum. v0.6.1  / 2 farklı kurulum var SystemD ve Docker 
 
 # Systemd Ubuntu 22.04 olması gerekiyor
 # Docker ubuntu 20.04 ile çalışıyor
