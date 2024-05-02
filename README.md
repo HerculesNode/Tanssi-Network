@@ -18,6 +18,8 @@
 | ----------------- | ----------------- | ----------------- |
 
 
+Bu kurulum Systemd ile olmaktadır . 2. kurulum yapmak isterseniz Docker kurulumu yapabilirsiniz.
+
 ## Sistem Güncelleme ve kütüphaneler
 ```shell
 sudo apt update && sudo apt upgrade -y
@@ -144,5 +146,65 @@ journalctl -u tanssid -fo cat
 
 ![image](https://github.com/HerculesNode/Tanssi-Network/assets/101635385/825cb7a3-59cb-4a0b-91d4-ebfbfaca67bd)
 
+
+
+
+## Docker kurulum
+
+```shell
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+```shell
+docker pull moondancelabs/tanssi
+```
+
+```shell
+mkdir /var/lib/dancebox
+```
+
+```shell
+sudo chown -R $(id -u):$(id -g) /var/lib/dancebox
+```
+
+```shell
+mkdir /var/lib/dancebox
+```
+
+Aşağıdaki alanlardaki ISMINIZ bölümüne isminizi yazın ve kodu direk çalıştırın
+
+```shell
+docker run --network="host" -v "/var/lib/dancebox:/data" \
+-u $(id -u ${USER}):$(id -g ${USER}) \
+moondancelabs/tanssi \
+--chain=dancebox \
+--name=ISMINIZ \
+--sync=warp \
+--base-path=/data/para \
+--state-pruning=2000 \
+--blocks-pruning=2000 \
+--collator \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
+--database paritydb \
+-- \
+--name=ISMINIZ \
+--base-path=/data/container \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
+-- \
+--chain=westend_moonbase_relay_testnet \
+--name=ISMINIZ \
+--sync=fast \
+--base-path=/data/relay \
+--state-pruning=2000 \
+--blocks-pruning=2000 \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
+--database paritydb
+```
+
+- Log için
+
+```shell
+docker logs -f funny_bhabha
+```
 
 
