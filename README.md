@@ -1,4 +1,7 @@
-# Tanssi Network Kurulum. v0.6.1  - Ubuntu 22.04 olması gerekiyor aksi taktirde çalışmaz !
+# Tanssi Network Kurulum. v0.6.1  - 
+
+# Systemd Ubuntu 22.04 olması gerekiyor
+# Docker ubuntu 20.04 ile çalışıyor
 
 - Node kurduktan sonra Form doldurun ve Discord rolü alın.
 
@@ -18,7 +21,7 @@
 | ----------------- | ----------------- | ----------------- |
 
 
-Bu kurulum Systemd ile olmaktadır . 2. kurulum yapmak isterseniz Docker kurulumu yapabilirsiniz.
+Bu kurulum Systemd ile olmaktadır . 2. kurulum yapmak isterseniz aşağıda bulunan Docker kurulumu yapabilirsiniz. 
 
 ## Sistem Güncelleme ve kütüphaneler
 ```shell
